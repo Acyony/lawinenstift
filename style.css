@@ -35,7 +35,6 @@
 
 /* General styling for the dropdown */
 .dropdown {
-    /*position: relative;*/
     display: inline-block;
 }
 
@@ -53,10 +52,13 @@
 .dropdown-content {
     display: none;
     position: absolute;
+    right: -3rem;
     background-color: #f9f9f9;
-    min-width: 160px;
+    width: 410px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    border-radius: 10px;
+
 }
 
 /* Links inside the dropdown */
@@ -65,6 +67,7 @@
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+
 }
 
 /* Change color of dropdown links on hover */
@@ -77,15 +80,8 @@
     display: block;
 }
 
-/* Change color of the button when you hover over it */
-.dropdown:hover .dropbtn {
-    /*background-color: #3e8e41;*/
-}
 
-
-/*Menu Icon animations*/
-
-
+/*----------------------Menu Icon animations-----------------*/
 html, body {
     height: 100%;
 }
@@ -187,3 +183,38 @@ html, body {
     display: block;
     cursor: pointer;
 }
+
+
+/* Base styles for larger screens */
+.dropdown-content {
+    display: none; /* Hidden by default, visible on hover or another trigger */
+    position: absolute;
+    right: -3rem;
+    background-color: #f9f9f9;
+    width: 410px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+
+/*@media (max-width: 768px) {
+    .dropdown-content {
+        display: block; !*Always visible on smaller screens *!
+        position: static; !*To not overlap other elements and follow normal flow*!
+        width: auto; !*Adjust width to fit smaller screens*!
+        right: 0; !*Align properly with no offset *!
+        box-shadow: none; !*Optional: remove shadow for a cleaner look on mobile `*!
+    }
+}*/
+
+/*!* -------------------Media query for screens up to 768px wide------------------ *!
+
+
+
+
+/*
+!* Assuming you want to toggle visibility based on a hover on a parent element *!
+.parent-element:hover .dropdown-content {
+    display: block;
+}*/
