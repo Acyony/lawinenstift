@@ -48,19 +48,8 @@
     cursor: pointer;
 }
 
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    right: -3rem;
-    background-color: #f9f9f9;
-    width: 410px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 10px;
 
-}
-
+/* TODO - Improve this*/
 /* Links inside the dropdown */
 .dropdown-content a {
     color: black;
@@ -165,14 +154,17 @@ html, body {
     animation: fadeOut .3s cubic-bezier(0.30, 1, 0.70, 1) forwards;
 }
 
-
+/* Dropdown content (hidden by default) */
 .dropdown-content {
     display: none;
     position: absolute;
+    right: -3rem;
     background-color: #f9f9f9;
-    min-width: 80px;
+    width: 410px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    border-radius: 10px;
+
 }
 
 .dropdown-toggle:checked + .dropdown-content {
@@ -185,15 +177,24 @@ html, body {
 }
 
 
-/* Base styles for larger screens */
-.dropdown-content {
-    display: none; /* Hidden by default, visible on hover or another trigger */
-    position: absolute;
-    right: -3rem;
-    background-color: #f9f9f9;
-    width: 410px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 10px;
-}
+@media (min-width: 768px) {
+    .dropdown-content {
+        position: static;
+        display: flex;
+        justify-content: space-around; /* Distributes space evenly between links */
+        box-shadow: none;
+    }
 
+    .dropdown-content {
+        background: none;
+    }
+
+    .dropdown-content a {
+        padding: 0;
+    }
+
+    .center {
+        left: 51%;
+    }
+
+}
