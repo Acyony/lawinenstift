@@ -12,10 +12,15 @@
     padding: 1.5rem;
 }
 
+.nav-section-wrapper {
+    width: 100%;
+    border-bottom: 12px #AFAFAF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .header-navigation ul {
     list-style-type: none;
     font-family: 'Inter';
-
 }
 
 .header-navigation ul li {
@@ -32,15 +37,20 @@
     display: flex;
 }
 
+.box {
+    /*background: orange;*/
+    padding: 1rem;
+    border-radius: 50%;
+}
 
 /* General styling for the dropdown */
 .dropdown {
-    display: inline-block;
+    /*display: inline-block;*/
 }
 
 /* Style the button used for opening the dropdown */
 .dropbtn {
-    background-color: #E7F0F2;
+    /*background-color: #E7F0F2;*/
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -48,6 +58,16 @@
     cursor: pointer;
 }
 
+.dropdown-content {
+    display: none; /* Hidden by default, visible on hover or another trigger */
+    position: absolute;
+    right: -3rem;
+    background-color: #f9f9f9;
+    width: 410px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+}
 
 /* TODO - Improve this*/
 /* Links inside the dropdown */
@@ -101,58 +121,6 @@ html, body {
     transform: translate(-50%, -50%);
 }
 
-@keyframes moveDown {
-    0% {
-        transform: translate3d(0, 0, 0) rotate(0deg);
-    }
-    50% {
-        transform: translate3d(0px, 6px, 0) rotate(0deg);
-    }
-    100% {
-        transform: translate3d(0px, 6px, 0) rotate(45deg);
-    }
-}
-
-@keyframes moveUp {
-    0% {
-        transform: translate(0px, 0px) rotate(0deg);
-    }
-    50% {
-        transform: translate(0px, -4px) rotate(0deg);
-    }
-    100% {
-        transform: translate(0px, -4px) rotate(135deg);
-    }
-}
-
-@keyframes fadeOut {
-    0% {
-        transform: scale(1);
-        opacity: 1;
-    }
-    50% {
-        transform: scale(0.5);
-        opacity: 0.5;
-    }
-    100% {
-        transform: scale(0);
-        opacity: 0;
-    }
-}
-
-.box:hover .first {
-    animation: moveDown .3s cubic-bezier(0.30, 1, 0.70, 1) forwards;
-
-}
-
-.box:hover .last {
-    animation: moveUp .3s cubic-bezier(0.30, 1, 0.70, 1) forwards;
-
-}
-
-.box:hover .middle {
-    animation: fadeOut .3s cubic-bezier(0.30, 1, 0.70, 1) forwards;
-}
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
@@ -160,7 +128,7 @@ html, body {
     position: absolute;
     right: -3rem;
     background-color: #f9f9f9;
-    width: 410px;
+    width: 100vw;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 10px;
@@ -197,4 +165,7 @@ html, body {
         left: 51%;
     }
 
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
 }
