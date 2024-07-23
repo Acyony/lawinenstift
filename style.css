@@ -230,6 +230,7 @@ r
 @media (max-width: 576px) {
     .heading-title {
         padding: 1rem 2rem;
+        font-size: 3rem;
     }
 
     .heading-title-bottom {
@@ -241,5 +242,10 @@ r
         font-size: 0.7rem;
         margin-top: 4rem;
         margin-bottom: -5rem;
+    }
+
+    .navigation-menu {
+        padding-left: 0;
+
     }
 }
