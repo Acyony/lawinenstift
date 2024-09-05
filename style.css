@@ -168,7 +168,7 @@ body {
     color: #3c3c3c;
 }
 
-.referenzen-section {
+.referenzen-section, .bewertungen-section-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -193,6 +193,14 @@ body {
 
 .referenzen-section-link {
     color: #333333;
+}
+
+.bewertungen-section-container {
+    margin: 40px;
+}
+
+.bewertungen-section-img {
+    width: 21%;
 }
 
 /*-----------------==^.^==---------@media (max-width: 1200px)--------------------------------------*/
@@ -254,17 +262,22 @@ body {
         padding: 3rem 3rem;
     }
 
-    .referenzen-section {
+    .referenzen-section, .bewertungen-section-container {
         flex-direction: row;
     }
 
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
+    .bewertungen-section-img {
+        width: 48%;
+    }
+
     /*
         Keeping this media query for future documentation
      }*/
+
 }
 
 /*-----------------==^.^==---------@media (max-width: 576px)--------------------------------------*/
