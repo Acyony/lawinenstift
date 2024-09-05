@@ -50,7 +50,7 @@ body {
     padding: 5px 10px;
 }
 
-r
+
 .header-navigation a {
     text-decoration: none;
     color: #404040;
@@ -168,6 +168,33 @@ r
     color: #3c3c3c;
 }
 
+.referenzen-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+
+.referenzen-section-btn {
+    background-color: #f96725;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    width: auto;
+    padding: 13px 34px;
+    line-height: 1em;
+}
+
+.referenzen-section-link {
+    color: #333333;
+}
+
 /*-----------------==^.^==---------@media (max-width: 1200px)--------------------------------------*/
 @media (max-width: 1200px) {
     .heading-title {
@@ -193,6 +220,8 @@ r
     .heading-title-bottom {
         padding: 3rem 5rem;
     }
+
+
 }
 
 /*-----------------==^.^==---------@media (max-width: 768px)--------------------------------------*/
@@ -224,6 +253,18 @@ r
         font-size: 1rem;
         padding: 3rem 3rem;
     }
+
+    .referenzen-section {
+        flex-direction: row;
+    }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    /*
+        Keeping this media query for future documentation
+     }*/
 }
 
 /*-----------------==^.^==---------@media (max-width: 576px)--------------------------------------*/
