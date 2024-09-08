@@ -204,11 +204,13 @@ body {
     font-size: 25px;
 }
 
-.bewertungen-section-link {
+.referenzen-section-link, .bewertungen-section-link {
     color: #333333;
-    text-decoration: none;
-    font-weight: bolder;
+}
 
+.bewertungen-section-link {
+    font-weight: bolder;
+    text-decoration: none;
 }
 
 .bewertungen-section-container {
