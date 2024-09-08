@@ -191,8 +191,24 @@ body {
     line-height: 1em;
 }
 
-.referenzen-section-link {
+.bewertungen-section-stars {
+    list-style: none;
+    display: flex;
+    margin-left: -26px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.bewertungen-section-star {
+    color: #FF8C19;
+    font-size: 25px;
+}
+
+.bewertungen-section-link {
     color: #333333;
+    text-decoration: none;
+    font-weight: bolder;
+
 }
 
 .bewertungen-section-container {
@@ -200,8 +216,9 @@ body {
 }
 
 .bewertungen-section-img {
-    width: 21%;
+    width: 30%;
 }
+
 
 /*-----------------==^.^==---------@media (max-width: 1200px)--------------------------------------*/
 @media (max-width: 1200px) {
@@ -262,7 +279,7 @@ body {
         padding: 3rem 3rem;
     }
 
-    .referenzen-section, .bewertungen-section-container {
+    .referenzen-section {
         flex-direction: row;
     }
 
