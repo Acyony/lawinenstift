@@ -4,7 +4,7 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    src: url('./recources/fonts/inter-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url('../fonts/inter-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 html, body {
@@ -19,7 +19,6 @@ body {
 }
 
 .navigation-logo {
-    height: 20px;
     grid-area: logo;
     display: flex;
     align-self: center;
@@ -33,7 +32,14 @@ body {
     display: grid;
     grid-template-areas: "logo menu";
     padding: 20px 20px;
+    position: fixed;
+    top: 0; /* Ensures it stays at the top */
+    left: 0;
+    right: 0; /* Stretches to full width */
+    z-index: 1; /* Keeps it on top of other content */
+    background-color: white; /* Optional, ensure the navbar has a background */
 }
+
 
 .navigation-menu {
     grid-area: menu;
@@ -135,7 +141,8 @@ body {
 }
 
 .heading-title-container {
-
+    height: 100%;
+    width: 100%;
 }
 
 .heading-title {
@@ -179,7 +186,7 @@ body {
 
 
 .referenzen-section-btn {
-    background-color: #f96725;
+    background-color: #f45301;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     border: none;
     border-radius: 50px;
@@ -232,6 +239,8 @@ body {
     .heading-title-bottom {
         padding: 2rem 10rem;
     }
+
+
 }
 
 @media (max-width: 992px) {
@@ -252,7 +261,11 @@ body {
 }
 
 /*-----------------==^.^==---------@media (max-width: 768px)--------------------------------------*/
+
+
 @media only screen and (min-width: 768px) {
+
+
     .navigation-menu-area-dropdown {
         position: static;
         display: flex;
@@ -296,6 +309,15 @@ body {
     /*
         Keeping this media query for future documentation
      }*/
+    .navigation {
+        padding: 40px 20px;
+    }
+
+    .navigation-logo {
+        width: 100%;
+        height: 100%;
+    }
+
 
 }
 
