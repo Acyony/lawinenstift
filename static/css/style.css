@@ -23,10 +23,13 @@ body {
     display: flex;
     align-self: center;
     margin-left: 2rem;
+    width: 36%;
+    height: 27%;
 }
 
+
 .navigation {
-    margin: 0;
+    margin: 10px;
     border-bottom: 12px #AFAFAF;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: grid;
@@ -143,6 +146,7 @@ body {
 .heading-title-container {
     height: 100%;
     width: 100%;
+    padding-top: 100px;
 }
 
 .heading-title {
@@ -260,6 +264,13 @@ body {
 
 }
 
+@media only screen and (min-width: 800px) {
+
+    .navigation-log {
+        width: 10px;
+    }
+}
+
 /*-----------------==^.^==---------@media (max-width: 768px)--------------------------------------*/
 
 
@@ -314,8 +325,8 @@ body {
     }
 
     .navigation-logo {
-        width: 100%;
-        height: 100%;
+        width: 45%;
+        height: 66%;
     }
 
 
