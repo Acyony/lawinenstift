@@ -157,6 +157,7 @@ body {
     letter-spacing: 4px;
     text-align: center;
     padding: 2rem 15rem;
+    line-break: anywhere;
 }
 
 .heading-title-top {
@@ -232,6 +233,16 @@ body {
     width: 30%;
 }
 
+.home-hero-image-section-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;
+    background: linear-gradient(to top, black 40%, transparent 40%);
+}
+
+.home-hero-image-section-img {
+    width: 97%;
+}
 
 /*-----------------==^.^==---------@media (max-width: 1200px)--------------------------------------*/
 @media (max-width: 1200px) {
@@ -316,6 +327,7 @@ body {
     .bewertungen-section-img {
         width: 48%;
     }
+
 
     /*
         Keeping this media query for future documentation
