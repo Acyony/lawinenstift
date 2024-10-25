@@ -143,9 +143,8 @@ body {
 
 }
 
+
 .heading-title-container {
-    height: 100%;
-    width: 100%;
     padding-top: 100px;
 }
 
@@ -157,7 +156,7 @@ body {
     letter-spacing: 4px;
     text-align: center;
     padding: 2rem 15rem;
-    line-break: anywhere;
+    /*line-break: anywhere;*/
 }
 
 .heading-title-top {
@@ -168,6 +167,7 @@ body {
     font-size: 0.9rem;
     margin-top: 6.5rem;
     margin-bottom: -6rem;
+    text-transform: uppercase;
 }
 
 .heading-title-bottom {
